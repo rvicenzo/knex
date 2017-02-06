@@ -3,6 +3,10 @@ angular.module('starter.categorias', ['ion-radial-progress'])
 .controller('CategoriasCtrl', function($scope) {
 
 
+  $scope.partialRanking = '7°'; //Parcial
+  $scope.evolution = '91%'; //Expert (nível)
+  $scope.abilities = 71; //Habilidades
+
   //Menu dropdow
   //Os dados serão enviados via webservice
   $scope.subcategorias = [

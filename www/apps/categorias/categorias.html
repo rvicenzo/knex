@@ -1,11 +1,13 @@
 <ion-view title="Categorias">
   <ion-content ng-controller="CategoriasCtrl">
     <div class="row">
-      <div class="col">7°</div>
+      <div class="col">{{partialRanking}}</div>
       <div class="col">
-        <ion-radial-progress timer="91" color="'#ff0000'" backgroundColor="'#00ffff'"></ion-radial-progress>
+        <!-- radial progress -->
+        <!--ion-radial-progress timer="91" color="'#ff0000'" backgroundColor="'#00ffff'"></ion-radial-progress-->
+        {{evolution}}
       </div>
-      <div class="col">71/100</div>
+      <div class="col">{{abilities}}/100</div>
     </div>
     <div class="row">
       <div class="col"><i class="icon ion-trophy"></i>&nbsp;Parcial</div>
