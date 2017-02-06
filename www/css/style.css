@@ -47,7 +47,7 @@ html, body {margin:0;padding:0;height:100%;}
 	color: white; 
 	font-size: 22px;
 	margin-top: 5px;
-	padding-left: 5px;
+	float: right;
 }
 
 #closeSub{
@@ -210,7 +210,57 @@ html, body {margin:0;padding:0;height:100%;}
 	float: left;
 	color: white;
 	font-weight: 700;
-	font-size: 16px;
-	margin-top: 5px;
-	margin-left: -30px;
+	font-size: 14px;
+	margin-top: -5px;
+}
+
+#navBarCurso{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font: inherit;
+	font-size: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 0;
+	overflow: hidden;
+	margin: 0 0px !important;
+	min-width: 50px !important;
+	height: 43px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 44px;
+}
+
+#btnMenu{
+	margin-left: -35px;
+	margin-top: -10px;
+	width: 90px;
+	color: white;
+}
+
+#barCourse{
+	height: 10px; margin-left: 0px; width: 60%;
+	margin-left: 30px;
+}
+
+.subMenu{
+	height: 80px;
+	width: 100%;
+	background-color: #334375;
+	margin-top: 50px;
+	border: none;
+}
+
+.letterCoursePorcentage{
+	margin-top: 30px;
+	float: right;
+	margin-left: 10px;
 }
