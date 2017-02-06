@@ -1,14 +1,14 @@
 angular.module('starter.categorias', ['ion-radial-progress'])
 
 .controller('CategoriasCtrl', function($scope) {
-  $scope.groups = [];
+  $scope.subcategorias = [];
   for (var i=0; i<10; i++) {
-    $scope.groups[i] = {
+    $scope.subcategorias[i] = {
       name: i,
-      items: []
+      conteudo: []
     };
     for (var j=0; j<3; j++) {
-      $scope.groups[i].items.push(i + '-' + j);
+      $scope.subcategorias[i].conteudo.push(i + '-' + j);
     }
   }
 
