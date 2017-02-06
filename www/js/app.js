@@ -67,6 +67,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'PlaylistCtrl'
       }
     }
+  })
+
+  .state('texto', {
+    url: '/texto',
+    templateUrl: 'apps/texto/texto.html'
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/playlists');
