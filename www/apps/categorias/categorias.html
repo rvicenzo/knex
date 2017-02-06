@@ -13,30 +13,31 @@
       <div class="col"><i class="icon ion-ribbon-b"></i>&nbsp;Habilidades</div>
     </div>
     <ion-list>
-      <div ng-repeat="curso in subcategorias">
+      <div ng-repeat="subcategoria in subcategorias">
         <ion-item class="item-stable"
-                  ng-click="toggleGroup(curso)"
-                  ng-class="{active: isGroupShown(curso)}">
+                  ng-click="toggleGroup(subcategoria)"
+                  ng-class="{active: isGroupShown(subcategoria)}">
                   <div class="row">
-                    <div class="col col-30">Curso {{curso.name}}</div>
+                    <div class="col col-30">{{subcategoria.name}}</div>
                     <div class="col col-70">
                       <div class="row">
-                        <div class="col col-20">63%</div>
+                        <div class="col col-20">{{subcategoria.evolution}}</div>
                         <div class="col col-60">
                           <progress max="100" value="50"></progress>
                         </div>
                         <div class="col col-10">A</div>
                         <div class="col">
-                          <i class="icon" ng-class="isGroupShown(curso) ? 'ion-chevron-down' : 'ion-chevron-right'"></i>
+                          <i class="icon" ng-class="isGroupShown(subcategoria) ? 'ion-chevron-down' : 'ion-chevron-right'"></i>
                         </div>
                       </div>
                     </div>
                   </div>
         </ion-item>
         <ion-item class="item-accordion"
-                  ng-repeat="item in curso.conteudo"
-                  ng-show="isGroupShown(curso)">
-          {{item}}
+                  ng-repeat="course in subcategoria.courses"
+                  ng-show="isGroupShown(subcategoria)">
+          {{course.courseName}}
+          {{course.score}}
         </ion-item>
       </div>
     </ion-list>
