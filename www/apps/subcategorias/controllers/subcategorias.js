@@ -1,6 +1,6 @@
-angular.module('starter.categorias', ['ion-radial-progress'])
+angular.module('starter.subcategorias', [])
 
-.controller('CategoriasCtrl', function($scope) {
+.controller('SubCategoriasCtrl', function($scope) {
 
 
   $scope.partialRanking = '7°'; //Parcial
