@@ -1,1 +1,193 @@
 /* Empty. Add your own CSS if you like */
+html, body {margin:0;padding:0;height:100%;}
+
+@media (max-width: 1440px) {
+	.metricsMinLetter{
+		font-size: 12px !important;
+	}
+	.topoMenu{
+		height: 300px !important;
+	}
+
+	.fatherBlueCover{
+		height: 300px !important;
+		margin-top: -300px !important;
+	}
+	.blueCover{
+		height: 300px !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.metricsMinLetter{
+		font-size: 8px !important;
+	}
+	.topoMenu{
+		height: 220px !important;
+	}
+
+	.fatherBlueCover{
+		height: 220px !important;
+		margin-top: -220px !important;
+	}
+	.blueCover{
+		height: 220px !important;
+	}
+}
+.header-bar{
+	background-color: #2a375d;
+}
+#closeSideMenu{
+	color: white; 
+	font-size: 22px;
+	padding-top: 6px;
+	padding-left: 5px;
+}
+.topoMenu{
+	width: 100%;
+	height: 300px;
+	background: url('../img/bg-menu.png') center no-repeat;
+	background-size: cover;
+	border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	-moz-border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	-webkit-border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	border: 0px solid #000000;
+}
+
+.fatherBlueCover{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	margin-top: -300px;
+	border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	-moz-border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	-webkit-border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	border: 0px solid #000000;
+}
+
+.elements {
+	position: absolute;
+	width: 100%;
+	margin-top: -30px;
+}
+
+.blueCover{
+	width: 100%;
+	height: 300px;
+	background-color: #2a375d;
+	position: absolute;
+	z-index: 0;
+	filter: opacity(75%);
+	border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	-moz-border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	-webkit-border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	border: 0px solid #000000;
+}
+
+.logoMenuSlider{
+	width: 40%;
+	margin-top: 40px;
+}
+
+.imgProfile{
+	width: 80px;
+	height: 80px;
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    left: 10%;
+    margin-top: 65px;
+}
+
+.nameProfile{
+	color: white;
+	width: 110px;
+	font-weight: 600;
+	font-size: 26px;
+	margin-top: 10px;
+}
+
+#btnConfigMenu{
+	font-size: 26px;
+	color: white;
+	margin-top: 100px;
+	margin-left: 10px;
+}
+
+.score{
+	color: white;
+	width: 110px;
+	left: 48%;
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 26px;
+}
+
+.fontScore{
+	font-family: 30px !important;
+}
+
+.fontSmallScore{
+	font-family: 24px;
+	font-weight: 100;
+	margin-top: 5px;
+}
+.subElements{
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+}
+.letterPosition{
+	font-size: 18px;
+	color: white;
+}
+.letterPositionSmall{
+	font-size: 12px;
+	color: white;
+	margin-top: 5px;
+}
+.rodapeMenu{
+	background-color: white;
+	width: 100%;
+	height: 500px;
+}
+
+.medalsLetter{
+	color: #2a375d;
+	font-weight: 800;
+	font-size: 22px;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+
+.minLetterMedal{
+	color: #2a375d;
+	font-weight: 400;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.metricsMinLetter{
+	color: #2a375d;
+	font-weight: 500;
+	float: left;
+	font-size: 8px;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+.porcent{
+	font-size: 10px;
+	float: left;
+	margin-top: 0px;
+	color: #2a375d;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.numberCourse{
+	font-size: 10px;
+	float: right;
+	margin-top: 0px;
+	color: #2a375d;
+	font-weight: 600;
+	text-transform: uppercase;
+}

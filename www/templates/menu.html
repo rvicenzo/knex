@@ -1,36 +1,181 @@
 <ion-side-menus enable-menu-with-back-views="false">
-  <ion-side-menu-content>
-    <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
+  <div ng-controller="menuSliderController">
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-stable">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
 
-      <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
-        </button>
-      </ion-nav-buttons>
-    </ion-nav-bar>
-    <ion-nav-view name="menuContent"></ion-nav-view>
-  </ion-side-menu-content>
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+          </button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+      <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
 
-  <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
-      <h1 class="title">Left</h1>
-    </ion-header-bar>
-    <ion-content>
-      <ion-list>
-        <ion-item menu-close ng-click="login()">
-          Login
-        </ion-item>
-        <ion-item menu-close href="#/app/search">
-          Search
-        </ion-item>
-        <ion-item menu-close href="#/app/browse">
-          Browse
-        </ion-item>
-        <ion-item menu-close href="#/app/playlists">
-          Playlists
-        </ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-side-menu>
+    <ion-side-menu 
+      side="left"
+      width="{{menuWidth}}"
+    >
+      <ion-header-bar class="bar-stable" class="header-bar" style="background-color: #2a375d">
+        <div menu-close class="icon ion-close-round" id="closeSideMenu"></div>
+        <h1 class="title" style="color: white">Perfil</h1>
+      </ion-header-bar>
+      <ion-content style="background-color: #37373b">
+
+      <div class="topoMenu">
+      </div>
+      <div class="fatherBlueCover">
+        <div class="blueCover">
+        </div>
+        <div class="elements">
+          <!-- elements -->
+          <div class="row">
+            <div class="col col-25">
+              <div class="imgProfile" style="background: url('{{imgProfile}}') center no-repeat; background-size: cover;">
+              </div>
+            </div>
+            <div class="col col-50">
+              <center>
+                <img src="img/logo-psa.png" class="logoMenuSlider">
+              </center>
+              <center>
+                <div class="nameProfile">
+                  {{nameProfile}}
+                </div>
+              </center>
+              <center>
+                <div class="score">
+                  <div class="fontScore">
+                    {{scoreProfile}}
+                  </div>
+                  <div class="fontSmallScore">
+                    Pontos
+                  </div>
+                </div>
+              </center>
+            </div>
+            <div class="col-col-25">
+              <div class="icon ion-ios-gear-outline" id="btnConfigMenu">
+              </div>
+            </div>
+          </div>
+          <!-- elements -->
+        </div>
+      </div>
+
+      <div class="subElements">
+        <div class="row">
+            <div class="col col-33.3">
+              <center>
+                <div class="letterPosition">{{general}}º</div>
+                <div class="icon ion-trophy" style="font-size: 16px; color: white; margin-top: 10px"></div>
+                <div class="letterPositionSmall">Geral</div>
+              </center>
+            </div>
+            <div class="col col-33.3">
+              <center>
+                <div class="letterPosition">7</div>
+                <div class="icon ion-trophy" style="font-size: 16px; color: white; margin-top: 10px"></div>
+              </center>
+            </div>
+            <div class="col col-33.3">
+              <center>
+                <div class="letterPosition">{{skills}} | 100</div>
+                <div class="icon ion-ribbon-b" style="font-size: 16px; color: white; margin-top: 10px"></div>
+                <div class="letterPositionSmall">Habilidades</div>
+              </center>
+            </div>
+      </div>
+      <div class="rodapeMenu">
+        <center>
+          <div class="medalsLetter">Minhas Medalhas</div>
+        </center>
+        <ion-slide-box>
+          <ion-slide>
+            <div class="row" style="margin-top: 20px">
+              <div class="col col-33.3333">
+                <center>
+                  <img ng-src="img/medal1.png" style="width: 65%">
+                  <div class="minLetterMedal">Atendimento ao cliente</div>
+                </center>
+              </div>
+              <div class="col col-33.3333">
+                <center>
+                  <img src="img/medal2.png" style="width: 65%">
+                  <div class="minLetterMedal">Entrega Rápida</div>
+                </center>
+              </div>
+              <div class="col col-33.3333">
+                <center>
+                  <img src="img/medal3.png" style="width: 65%">
+                  <div class="minLetterMedal">Negociador</div>
+                </center>
+              </div>
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+
+        <center>
+          <div class="medalsLetter">Minhas Métricas</div>
+          <div class="row" style="margin-top: 20px">
+              <div class="col col-50">
+                <div class="metricsMinLetter">Cursos concluídos</div>
+                <div class="metricsMinLetter">Respostas certas em quiz</div>
+                <div class="metricsMinLetter">Atividades entregues</div>
+                <div class="metricsMinLetter">Cursos em andamento</div>
+              </div>
+              <div class="col col-50">
+                <div class="row">
+                  <div class="col col-20">
+                    <div class="porcent">{{completeCourses}}%</div>
+                  </div>
+
+                  <div class="col col-80">
+                    <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 100%; float: right">
+                      <div class="w3-progressbar w3-round-xlarge" style="width:{{completeCourses}}%; background-color: #25a083 !important"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col col-20">
+                    <div class="porcent">{{writeAnwser}}%</div>
+                  </div>
+
+                  <div class="col col-80">
+                    <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 100%; float: right">
+                      <div class="w3-progressbar w3-round-xlarge" style="width:{{writeAnwser}}%; background-color: #2a80be !important"></div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col col-20">
+                    <div class="porcent">{{activities}}%</div>
+                  </div>
+
+                  <div class="col col-80">
+                    <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 100%; float: right">
+                      <div class="w3-progressbar w3-round-xlarge" style="width:{{activities}}%; background-color: #2a80be !important"></div>
+                    </div>
+                  </div>
+                </div>
+
+               <div class="numberCourse">
+                {{currentCourses}} cursos
+               </div>
+
+
+              </div>
+          </div>
+        </center>
+      </div>
+
+      
+
+      </ion-content>
+    </ion-side-menu>
+  </div>
 </ion-side-menus>
