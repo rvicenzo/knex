@@ -1,0 +1,45 @@
+<ion-view title="Categorias">
+  <ion-content ng-controller="CategoriasCtrl">
+    <div class="row">
+      <div class="col">7°</div>
+      <div class="col">
+        <ion-radial-progress timer="91" color="'#ff0000'" backgroundColor="'#00ffff'"></ion-radial-progress>
+      </div>
+      <div class="col">71/100</div>
+    </div>
+    <div class="row">
+      <div class="col"><i class="icon ion-trophy"></i>&nbsp;Parcial</div>
+      <div class="col">Expert</div>
+      <div class="col"><i class="icon ion-ribbon-b"></i>&nbsp;Habilidades</div>
+    </div>
+    <ion-list>
+      <div ng-repeat="group in groups">
+        <ion-item class="item-stable"
+                  ng-click="toggleGroup(group)"
+                  ng-class="{active: isGroupShown(group)}">
+                  <div class="row">
+                    <div class="col col-30">Group {{group.name}}</div>
+                    <div class="col col-70">
+                      <div class="row">
+                        <div class="col col-20">63%</div>
+                        <div class="col col-60">
+                          <progress max="100" value="50"></progress>
+                        </div>
+                        <div class="col col-10">A</div>
+                        <div class="col">
+                          <i class="icon" ng-class="isGroupShown(group) ? 'ion-chevron-down' : 'ion-chevron-right'"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </ion-item>
+        <ion-item class="item-accordion"
+                  ng-repeat="item in group.items"
+                  ng-show="isGroupShown(group)">
+          {{item}}
+        </ion-item>
+      </div>
+    </ion-list>
+
+  </ion-content>
+</ion-view>
