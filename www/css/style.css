@@ -2,6 +2,9 @@
 html, body {margin:0;padding:0;height:100%;}
 
 @media (max-width: 1440px) {
+	.numberCourse{
+		font-size: 12px !important;
+	}
 	.metricsMinLetter{
 		font-size: 12px !important;
 	}
@@ -19,6 +22,9 @@ html, body {margin:0;padding:0;height:100%;}
 }
 
 @media (max-width: 500px) {
+	.numberCourse{
+		font-size: 10px !important;
+	}
 	.metricsMinLetter{
 		font-size: 8px !important;
 	}
@@ -186,7 +192,7 @@ html, body {margin:0;padding:0;height:100%;}
 .numberCourse{
 	font-size: 10px;
 	float: right;
-	margin-top: 0px;
+	margin-top: 5px;
 	color: #2a375d;
 	font-weight: 600;
 	text-transform: uppercase;
