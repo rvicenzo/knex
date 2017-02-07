@@ -43,6 +43,7 @@ angular.module('starter.subcategorias', [])
         {
           name: 'Vendas',
           evolution: '63%',
+          level: 'a',
           courses: [
             {
               courseName: 'Fechamento',
@@ -64,6 +65,7 @@ angular.module('starter.subcategorias', [])
         },
         {
           name: 'Suporte',
+          level: 'p',
           evolution: '15%',
           courses: [
             {
@@ -86,7 +88,31 @@ angular.module('starter.subcategorias', [])
         },
         {
           name: 'Atendimento',
-          evolution: '50%',
+          level: 'i',
+          evolution: '100%',
+          courses: [
+            {
+              courseName: 'Item 01',
+              score: 5
+            },
+            {
+              courseName: 'Item 02',
+              score: 15
+            },
+            {
+              courseName: 'Item 03',
+              score: 10
+            },
+            {
+              courseName: 'Item 04',
+              score: 90
+            }
+          ]
+        },
+        {
+          name: 'Atendimento',
+          level: 'e',
+          evolution: '99%',
           courses: [
             {
               courseName: 'Item 01',

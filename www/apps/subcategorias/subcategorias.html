@@ -29,7 +29,7 @@
 	    </div>
   	</div>
     <ion-list>
-      <div ng-repeat="(idx, subcategoria) in subcategorias">
+      <div ng-repeat="subcategoria in subcategorias">
         <ion-item class="item-stable"
                   ng-click="toggleGroup(subcategoria)"
                   ng-class="{active: isGroupShown(subcategoria)}">
@@ -41,8 +41,8 @@
                         <div class="col col-50 progress">
 							<div class="loader" ng-style="{{getStyle(subcategoria.evolution)}}"></div>
 						</div>
-                        <div class="col letra">
-                        	<span class="letra">A</span>
+                        <div class="col level">
+                        	<span class="{{subcategoria.level}}"></span>
 							<i class="icon" ng-class="isGroupShown(subcategoria) ? 'ion-chevron-down' : 'ion-chevron-right'"></i>
                         </div>
                       </div>
