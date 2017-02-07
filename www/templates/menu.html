@@ -19,7 +19,7 @@
     >
       <ion-header-bar class="bar-stable" class="header-bar" style="background-color: #2a375d">
         <div menu-close class="icon ion-close-round" id="closeSideMenu"></div>
-        <h1 class="title" style="color: white">Perfil</h1>
+        <h1 class="title" style="color: white; left: 0px !important">Perfil</h1>
       </ion-header-bar>
       <ion-content style="background-color: #37373b">
 
@@ -32,7 +32,7 @@
           <!-- elements -->
           <div class="row">
             <div class="col col-25">
-              <div class="imgProfile" style="background: url('{{imgProfile}}') center no-repeat; background-size: cover;">
+              <div ng-style="imgProfile" class="imgProfile">
               </div>
             </div>
             <div class="col col-50">
@@ -75,8 +75,7 @@
             </div>
             <div class="col col-33.3">
               <center>
-                <div class="letterPosition">7</div>
-                <div class="icon ion-trophy" style="font-size: 16px; color: white; margin-top: 10px"></div>
+
               </center>
             </div>
             <div class="col col-33.3">
@@ -118,58 +117,148 @@
 
         <center>
           <div class="medalsLetter">Minhas Métricas</div>
-          <div class="row" style="margin-top: 20px">
-              <div class="col col-50">
-                <p><div class="metricsMinLetter">Cursos concluídos</div></p><br/>
-                <p><div class="metricsMinLetter">Respostas certas em quiz</div></p><br/>
-                <p><div class="metricsMinLetter">Atividades entregues</div></p><br/>
-                <p><div class="metricsMinLetter">Cursos em andamento</div></p><br/>
-              </div>
-              <div class="col col-50">
-                <div class="row">
-                  <div class="col col-20">
-                    <div class="porcent">{{completeCourses}}%</div>
-                  </div>
-
-                  <div class="col col-80">
-                    <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 100%; float: right">
-                      <div class="w3-progressbar w3-round-xlarge" style="width:{{completeCourses}}%; background-color: {{completeCoursesColor}} !important"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col col-20">
-                    <div class="porcent">{{writeAnwser}}%</div>
-                  </div>
-
-                  <div class="col col-80">
-                    <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 100%; float: right">
-                      <div class="w3-progressbar w3-round-xlarge" style="width:{{writeAnwser}}%; background-color: {{writeAnwserColor}} !important"></div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="row">
-                  <div class="col col-20">
-                    <div class="porcent">{{activities}}%</div>
-                  </div>
-
-                  <div class="col col-80">
-                    <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 100%; float: right">
-                      <div class="w3-progressbar w3-round-xlarge" style="width:{{activities}}%; background-color: {{activitiesColor}} !important"></div>
-                    </div>
-                  </div>
-                </div>
-
-               <div class="numberCourse">
-                {{currentCourses}} cursos
-               </div>
-
-
-              </div>
+          <div class="faixa">
+            <div class="metricsLetterTopo">Média de conquistas</div>
           </div>
+
+          <!-- ****************************my metrics************************************* -->
+          <div class="row">
+            <div class="col col-25">
+              <!--stars-->
+              <center>
+                <img src="img/star2.png" class="star1">
+                <img src="img/star2.png" class="star1">
+                <img src="img/star2.png" class="star1">
+              </center>
+              <!---./stars-->
+
+            </div>
+
+            
+            <div class="col col-75">
+               <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 60%; float: left">
+                  <div class="w3-progressbar w3-round-xlarge" style="width:{{completeCourses}}%; background-color: {{completeCoursesColor}} !important"></div>
+                </div>
+                <div style="width: 20%; color: {{completeCoursesColor}}; margin-left: 75px;">
+                  {{completeCourses}}%
+                </div>
+                <div style="float: right; margin-top: -20px;">51/66</div>
+            </div>
+          </div>
+          <!-- ****************************./my metrics************************************* -->
+          <!-- ****************************my metrics************************************* -->
+          <div class="row">
+            <div class="col col-25">
+              <!--stars-->
+              <center>
+                <img src="img/star1.png" class="star1">
+                <img src="img/star2.png" class="star1">
+                <img src="img/star2.png" class="star1">
+              </center>
+              <!---./stars-->
+
+            </div>
+
+            
+            <div class="col col-75">
+               <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 60%; float: left">
+                  <div class="w3-progressbar w3-round-xlarge" style="width:{{completeCourses}}%; background-color: {{completeCoursesColor}} !important"></div>
+                </div>
+                <div style="width: 20%; color: {{completeCoursesColor}}; margin-left: 75px;">
+                  {{completeCourses}}%
+                </div>
+                <div style="float: right; margin-top: -20px;">51/66</div>
+            </div>
+          </div>
+          <!-- ****************************./my metrics************************************* -->
+          <!-- ****************************my metrics************************************* -->
+          <div class="row">
+            <div class="col col-25">
+              <!--stars-->
+              <center>
+                <img src="img/star1.png" class="star1">
+                <img src="img/star1.png" class="star1">
+                <img src="img/star2.png" class="star1">
+              </center>
+              <!---./stars-->
+
+            </div>
+
+            
+            <div class="col col-75">
+               <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 60%; float: left">
+                  <div class="w3-progressbar w3-round-xlarge" style="width:{{completeCourses}}%; background-color: {{completeCoursesColor}} !important"></div>
+                </div>
+                <div style="width: 20%; color: {{completeCoursesColor}}; margin-left: 75px;">
+                  {{completeCourses}}%
+                </div>
+                <div style="float: right; margin-top: -20px;">51/66</div>
+            </div>
+          </div>
+          <!-- ****************************./my metrics************************************* -->
+          <!-- ****************************my metrics************************************* -->
+          <div class="row">
+            <div class="col col-25">
+              <!--stars-->
+              <center>
+                <img src="img/star1.png" class="star1">
+                <img src="img/star1.png" class="star1">
+                <img src="img/star1.png" class="star1">
+              </center>
+              <!---./stars-->
+
+            </div>
+
+            
+            <div class="col col-75">
+               <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 60%; float: left">
+                  <div class="w3-progressbar w3-round-xlarge" style="width:{{completeCourses}}%; background-color: {{completeCoursesColor}} !important"></div>
+                </div>
+                <div style="width: 20%; color: {{completeCoursesColor}}; margin-left: 75px;">
+                  {{completeCourses}}%
+                </div>
+                <div style="float: right; margin-top: -20px;">51/66</div>
+            </div>
+          </div>
+          <!-- ****************************./my metrics************************************* -->
+
+          <div class="faixa">
+            <div class="metricsLetterTopo">Aproveitamento</div>
+          </div>
+
+          <!-- _____________________________aproveitamento*_______________________________ -->
+          <ion-list>
+            <ion-item ng-repeat="item in aproveitamento" style="height: 60px;">
+                <div class="row">
+                  <div class="col col-20">
+                    <!--stars-->
+                    <center>
+                      <div class="baseImg">
+
+                      </div>
+                    </center>
+                    <!---./stars-->
+
+                  </div>
+
+                  
+                  <div class="col col-80">
+                     <div class="nameAproveitamento">
+                        {{item.name}}
+                     </div>
+                     <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 55%; float: left; height: 8px;">
+                        <div class="w3-progressbar w3-round-xlarge" style="width:{{item.porcentage}}%; background-color: #3098db !important"></div>
+                      </div>
+                      <div style="width: 20%; color: #3098db; margin-left: 70px;">
+                        {{item.porcentage}}%
+                      </div>
+                      <div style="float: right; margin-top: -20px;">51/66</div>
+                  </div>
+                </div>
+            </ion-item>
+          </ion-list>
+          <!-- _____________________________./aproveitamento*_______________________________ -->
+
         </center>
       </div>
 

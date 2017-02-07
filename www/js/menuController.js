@@ -19,6 +19,12 @@ function menuSliderController($scope){
 
   getMetrics();
   getInfo();
+  aproveitamento();
+
+  $scope.getMarginLeft = function (evolution) {
+    var marginLeft = 100 - parseInt(evolution.replace('%', ''));
+    return marginLeft + '%';
+  }
 
   function getInfo(){
   	$scope.imgProfile = 'img/jon.jpeg';
@@ -27,6 +33,11 @@ function menuSliderController($scope){
   	$scope.general = 1;
   	$scope.skills = 55;
   	$scope.progress = 25;
+    $scope.evolution = '91%'; //Expert (nível)
+    $scope.imgProfile = {
+      "background": 'url('+$scope.imgProfile+') center no-repeat',
+      "background-size": 'cover'
+    }
   }
 
   function getMetrics(){
@@ -60,6 +71,10 @@ function menuSliderController($scope){
   			//amarelo - desafio final
   			return '#dad805';
   		}
-  	}
+  }
+
+  function aproveitamento(){
+    $scope.aproveitamento = [{name: 'Empreendedorismo', porcentage: '77'}, {name: 'Tv em Geral', porcentage: '40'}];
+  }
 
 }
