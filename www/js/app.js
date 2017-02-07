@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.menuTeste', 'starter.explore', 'starter.menu', 'starter.curso', 'starter.subcategorias'])
+angular.module('starter', ['ionic', 'starter.menuTeste', 'starter.explore', 'starter.menu', 'starter.curso', 'starter.subcategorias', 'starter.texto'])
 
 
 .run(function($ionicPlatform) {
@@ -67,8 +67,16 @@ angular.module('starter', ['ionic', 'starter.menuTeste', 'starter.explore', 'sta
   .state('categorias', {
     url: '/categorias',
     templateUrl: 'apps/categorias/categorias.html'
-  });
 
+  })
+  .state('app.texto', {
+    url: '/texto',
+    views: {
+      'menuContent': {
+        templateUrl: 'apps/texto/texto.html'
+      }
+    }
+  })
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/menuRodape');
 });
