@@ -7,9 +7,34 @@ angular.module('starter.subcategorias', [])
   $scope.evolution = '91%'; //Expert (nível)
   $scope.abilities = 71; //Habilidades
 
-  $scope.getMarginLeft = function (evolution) {
-    var marginLeft = 100 - parseInt(evolution.replace('%', ''));
-    return marginLeft + '%';
+  $scope.getStyle = function (evolution) {
+    var porcentage = parseInt(evolution.replace('%', ''));
+    var style = {
+      'margin-left': (100 - porcentage) + '%',
+      'background-color': changeColor(porcentage),
+      'width': evolution
+    };
+
+    return style;
+  }
+
+  function changeColor (porcentage) {
+     if (porcentage >= 0 && porcentage < 39) {
+         //cinza
+         return '#7f7f7f';
+     } else if (porcentage >= 40 && porcentage < 69) {
+         //laranja
+         return '#fa6600';
+     } else if (porcentage >= 70 && porcentage < 99) {
+         //verde
+         return '#25a083';
+     } else if (porcentage == 100) {
+         //azul
+         return '#0001ff';
+     } else {
+         //amarelo - desafio final
+         return '#dad805';
+     }
   }
 
   //Menu dropdow

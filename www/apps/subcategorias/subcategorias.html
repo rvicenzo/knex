@@ -39,8 +39,7 @@
                       <div class="row">
                       	<div class="col evo">{{subcategoria.evolution}}</div>
                         <div class="col col-50 progress">
-							<div class="loader" ng-class="{'verde': idx === 0, 'cinza': idx === 1, 'amarelo': idx === 2}"
-							style="width: {{subcategoria.evolution}}; margin-left: {{getMarginLeft(subcategoria.evolution)}}"></div>
+							<div class="loader" ng-style="{{getStyle(subcategoria.evolution)}}"></div>
 						</div>
                         <div class="col letra">
                         	<span class="letra">A</span>
