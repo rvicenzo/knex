@@ -1,1 +1,321 @@
 /* Empty. Add your own CSS if you like */
+html, body {margin:0;padding:0;height:100%;}
+
+@media (max-width: 1920px) {
+	.rodapeMenu{
+		height: 800px !important;
+	}
+}
+
+@media (max-width: 1440px) {
+	.rodapeMenu{
+		height: 800px !important;
+	}
+	.numberCourse{
+		font-size: 12px !important;
+	}
+	.metricsMinLetter{
+		font-size: 12px !important;
+	}
+	.topoMenu{
+		height: 300px !important;
+	}
+
+	.fatherBlueCover{
+		height: 300px !important;
+		margin-top: -300px !important;
+	}
+	.blueCover{
+		height: 300px !important;
+	}
+}
+
+@media (max-width: 800px){
+	.rodapeMenu{
+		height: 600px !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.rodapeMenu{
+		height: 500px !important;
+	}
+	.numberCourse{
+		font-size: 10px !important;
+	}
+	.metricsMinLetter{
+		font-size: 8px !important;
+	}
+	.topoMenu{
+		height: 220px !important;
+	}
+
+	.fatherBlueCover{
+		height: 220px !important;
+		margin-top: -220px !important;
+	}
+	.blueCover{
+		height: 220px !important;
+	}
+}
+.header-bar{
+	background-color: #2a375d;
+}
+#closeSideMenu{
+	color: white;
+	width: 100%;
+	font-size: 22px;
+	margin-top: 5px;
+	float: right;
+	padding-left: 5px;
+	cursor: pointer;
+}
+
+#closeSub{
+	color: white;
+	font-size: 22px;
+	padding-top: -5px;
+	padding-left: 5px;
+}
+
+.topoMenu{
+	width: 100%;
+	height: 300px;
+	background: url('../img/bg-menu.png') center no-repeat;
+	background-size: cover;
+	border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	-moz-border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	-webkit-border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	border: 0px solid #000000;
+}
+
+.fatherBlueCover{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	margin-top: -300px;
+	border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	-moz-border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	-webkit-border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	border: 0px solid #000000;
+}
+
+.elements {
+	position: absolute;
+	width: 100%;
+	margin-top: -30px;
+}
+
+.blueCover{
+	width: 100%;
+	height: 300px;
+	background-color: #2a375d;
+	position: absolute;
+	z-index: 0;
+	filter: opacity(75%);
+	border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	-moz-border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	-webkit-border-radius: 0px 0px 200px 200px / 0px 0px 40px 40px;
+	border: 0px solid #000000;
+}
+
+.logoMenuSlider{
+	width: 40%;
+	margin-top: 40px;
+}
+
+.imgProfile{
+	width: 80px;
+	height: 80px;
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    left: 10%;
+    margin-top: 65px;
+}
+
+.nameProfile{
+	color: white;
+	width: 110px;
+	font-weight: 600;
+	font-size: 26px;
+	margin-top: 10px;
+}
+
+#btnConfigMenu{
+	font-size: 26px;
+	color: white;
+	margin-top: 100px;
+	margin-left: 10px;
+}
+
+.score{
+	color: white;
+	width: 110px;
+	left: 48%;
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 26px;
+}
+
+.fontScore{
+	font-family: 30px !important;
+}
+
+.fontSmallScore{
+	font-family: 24px;
+	font-weight: 100;
+	margin-top: 5px;
+}
+.subElements{
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+}
+.letterPosition{
+	font-size: 18px;
+	color: white;
+}
+.letterPositionSmall{
+	font-size: 12px;
+	color: white;
+	margin-top: 5px;
+}
+.rodapeMenu{
+	background-color: white;
+	width: 100%;
+	height: 600px;
+}
+
+.medalsLetter{
+	color: #2a375d;
+	font-weight: 800;
+	font-size: 22px;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+
+.minLetterMedal{
+	color: #2a375d;
+	font-weight: 400;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.metricsMinLetter{
+	color: #2a375d;
+	font-weight: 500;
+	float: left;
+	font-size: 8px;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+.porcent{
+	font-size: 10px;
+	float: left;
+	margin-top: 0px;
+	color: #2a375d;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.numberCourse{
+	font-size: 10px;
+	float: right;
+	margin-top: 5px;
+	color: #2a375d;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.topoLetter{
+	float: left;
+	color: white;
+	font-weight: 700;
+	font-size: 14px;
+	margin-top: -5px;
+}
+
+#navBarCurso{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font: inherit;
+	font-size: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 0;
+	overflow: hidden;
+	margin: 0 0px !important;
+	min-width: 50px !important;
+	height: 43px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 44px;
+}
+
+#btnMenu{
+	margin-left: -35px;
+	margin-top: -10px;
+	width: 90px;
+	color: white;
+}
+
+#barCourse{
+	height: 10px; margin-left: 0px; width: 60%;
+	margin-left: 30px;
+}
+
+.subMenu{
+	height: 80px;
+	width: 100%;
+	background-color: #334375;
+	margin-top: 50px;
+	border: none;
+}
+
+.letterCoursePorcentage{
+	margin-top: 30px;
+	float: right;
+	margin-left: 10px;
+}
+
+.detailCourseComplete{
+	width: 5px;
+	height: 30px;
+	background-color: #25a083;
+	position: absolute;
+	margin-left: 10px;
+}
+
+.detailCourseIncomplete{
+	width: 5px;
+	height: 30px;
+	background-color: #929292;
+	position: absolute;
+	margin-left: 10px;
+}
+
+.detailTopCourseComplete{
+	width: 5px;
+	height: 32px;
+	background-color: #25a083;
+	position: absolute;
+	margin-left: 10px;
+	margin-top: -30px;
+}
+
+.detailTopCourseIncomplete{
+	width: 5px;
+	height: 32px;
+	background-color: #929292;
+	position: absolute;
+	margin-left: 10px;
+	margin-top: -30px;
+}/* Empty. Add your own CSS if you like */
