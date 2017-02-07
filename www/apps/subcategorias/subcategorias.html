@@ -34,17 +34,17 @@
                   ng-click="toggleGroup(subcategoria)"
                   ng-class="{active: isGroupShown(subcategoria)}">
                   <div class="row">
-                    <div class="col col-33 name">{{subcategoria.name}}</div>
-                    <div class="col col-67">
+                    <div class="col col-50 name">{{subcategoria.name}}</div>
+                    <div class="col col-50">
                       <div class="row">
-                        <div class="col col-67 progress">
+                      	<div class="col evo">{{subcategoria.evolution}}</div>
+                        <div class="col col-50 progress">
 							<div class="loader" ng-class="{'verde': idx === 0, 'cinza': idx === 1, 'amarelo': idx === 2}"
-							style="width: {{subcategoria.evolution}};margin-left: {{getMarginLeft(subcategoria.evolution)}}"></div>
+							style="width: {{subcategoria.evolution}}; margin-left: {{getMarginLeft(subcategoria.evolution)}}"></div>
 						</div>
-                        <div class="col">
-                        	{{subcategoria.evolution}}
-                        	A
-                          <i class="icon" ng-class="isGroupShown(subcategoria) ? 'ion-chevron-down' : 'ion-chevron-right'"></i>
+                        <div class="col letra">
+                        	<span class="letra">A</span>
+							<i class="icon" ng-class="isGroupShown(subcategoria) ? 'ion-chevron-down' : 'ion-chevron-right'"></i>
                         </div>
                       </div>
                     </div>
