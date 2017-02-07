@@ -1,8 +1,8 @@
-angular.module('starter.cursos', [])
+angular.module('starter.texto', [])
 
-.controller('CursosCtrl', function($scope) {
+.controller('TextoCtrl', function($scope) {
 
-
-  
+  $scope.coursename = "Fechamento";
+  $scope.abilities = 71;
 
 });
