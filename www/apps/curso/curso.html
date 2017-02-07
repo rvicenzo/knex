@@ -1,27 +1,27 @@
 <ion-view style="color: white"  hide-nav-bar="true">
-	<ion-content style="margin-top: -50px;">  
+	<ion-content style="margin-top: -50px;">
 		<div class="bar bar-header bar-positive;" style="background-color: #2a375d; border: none" ng-controller="topoCursoController">
 			<div class="row">
-	  	  		<div class="col col-10">
-	  	  			<button menu-toggle="left" id="btnMenu" class="button button-icon icon ion-ios-person-outline"></button>
-	  	  		</div>
-	  	  		<div class="col col-20">
-	  	  			<div class="topoLetter">Vendas</div>
-	  	  		</div>
-	  	  		<div class="col col-70">
-	  	  			<div class="row">
-	  	  				<div class="col col-90" style="margin-top: -10px">
-	  	  					<div class="porcent" style="color: white !important; margin-top: -5px; margin-left: 0px">{{completeCourses}}%</div>
-	  	  					<div class="w3-progress-container w3-round" id="barCourse">
+	  		<div class="col col-10">
+	  			<button menu-toggle="left" id="btnMenu" class="button button-icon icon ion-ios-person-outline"></button>
+	  		</div>
+	  		<div class="col col-20">
+	  			<div class="topoLetter">Vendas</div>
+	  		</div>
+	  		<div class="col col-70">
+	  			<div class="row">
+	  				<div class="col col-90" style="margin-top: -10px">
+	  					<div class="porcent" style="color: white !important; margin-top: -5px; margin-left: 0px">{{completeCourses}}%</div>
+	  					<div class="w3-progress-container w3-round" id="barCourse">
 								<div class="w3-progressbar w3-round" style="width:{{completeCourses}}%; background-color: {{colorCourse}}"></div>
 							</div>
-	  	  				</div>
-	  	  				<div class="col col-10">
-	  	  					<div menu-close class="icon ion-close-round" id="closeSideMenu" style="margin-top: -15px"></div>
-	  	  				</div>
-	  	  		</div>
-	        </div>
-		</div>
+	  				</div>
+						<div class="col col-10">
+							<div menu-close class="icon ion-close-round" id="closeSideMenu" style="margin-top: -15px"></div>
+						</div>
+	  			</div>
+	  		</div>
+			</div>
 		</div>
 		<div ng-controller="cursoController">
 			<div class="subMenu">
@@ -34,10 +34,10 @@
 							<div class="col col-100">
 								<div class="letterCoursePorcentage">50 | 100</div>
 								<img src="img/skills_white.png" style="height: 30px; color: white; margin-top: 26px; float: right; margin-left: 10px">
-								
+
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
