@@ -45,6 +45,21 @@
 	background-image: url('../img/i-principiante.png');
 	background-repeat: no-repeat;
 }
+
+.subCat .header .light i {
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	height: 11px;
+	width: 11px;
+}
+
+.subCat .ranking-pb {
+	background-image: url('../img/ranking-pb.png');
+}
+
+.subCat .habilidades-pb {
+	background-image: url('../img/habilidades-pb.png');
 }
 
 .subCat .level i {
@@ -92,6 +107,7 @@
 
 .subCat .header .light {
 	font-weight: lighter;
+	font-size: 16px;
 }
 
 .subCat .header .padding {
@@ -114,6 +130,7 @@
 }
 
 .subCat .header .percent .text-center {
+	font-size: 16px;
 	margin: -10px auto 0;
 }
 
