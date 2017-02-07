@@ -76,6 +76,7 @@
             <div class="col col-33.3">
               <center>
 
+
               </center>
             </div>
             <div class="col col-33.3">
@@ -91,24 +92,12 @@
           <div class="medalsLetter">Minhas Conquistas</div>
         </center>
         <ion-slide-box>
-          <ion-slide>
+          <ion-slide ng-repeat="medal in medals">
             <div class="row" style="margin-top: 20px">
-              <div class="col col-33.3333">
+              <div class="col col-33.3333" ng-repeat="itemMedal in medal">
                 <center>
-                  <img ng-src="img/medal1.png" style="width: 65%">
-                  <div class="minLetterMedal">Atendimento ao cliente</div>
-                </center>
-              </div>
-              <div class="col col-33.3333">
-                <center>
-                  <img src="img/medal2.png" style="width: 65%">
-                  <div class="minLetterMedal">Entrega Rápida</div>
-                </center>
-              </div>
-              <div class="col col-33.3333">
-                <center>
-                  <img src="img/medal3.png" style="width: 65%">
-                  <div class="minLetterMedal">Negociador</div>
+                  <img ng-src="{{itemMedal.img}}" style="width: 65%; max-width: 200px;">
+                  <div class="minLetterMedal">{{itemMedal.text}}</div>
                 </center>
               </div>
             </div>

@@ -20,6 +20,7 @@ function menuSliderController($scope){
   getMetrics();
   getInfo();
   aproveitamento();
+  getMedals();
 
   $scope.getMarginLeft = function (evolution) {
     var marginLeft = 100 - parseInt(evolution.replace('%', ''));
@@ -38,6 +39,23 @@ function menuSliderController($scope){
       "background": 'url('+$scope.imgProfile+') center no-repeat',
       "background-size": 'cover'
     }
+  }
+
+  function getMedals(){
+
+    //agrupar medalhas de 3 em 3
+    var medals = [];
+    medals.push({img: 'img/medal1.png', text: 'Atendimento ao cliente'});
+
+    var arrays = [], size = 3;
+
+    while (medals.length > 0){
+        arrays.push(medals.splice(0, size));
+    }
+
+    $scope.medals = arrays;
+    console.log(arrays);
+
   }
 
   function getMetrics(){
