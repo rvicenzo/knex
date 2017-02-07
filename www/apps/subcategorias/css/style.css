@@ -62,6 +62,37 @@
 	background-image: url('../img/habilidades-pb.png');
 }
 
+
+.subCat .course i {
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	height: 30px;
+	margin-top: 5px;
+	position: absolute;
+	right: 10px;
+	width: 30px;
+}
+
+.subCat .course .habilidades-color {
+	background-image: url('../img/habilidades-color.png');
+	height: 15px;
+	position: relative;
+	width: 15px;
+}
+
+.subCat .course .concluido {
+	background-image: url('../img/concluido.png');
+}
+
+.subCat .course .iniciar {
+	background-image: url('../img/iniciar.png');
+}
+
+.subCat .course .onde-estou {
+	background-image: url('../img/onde-estou.png');
+}
+
 .subCat .level i {
     margin: -4px 0 0 6px;
     position: absolute;
