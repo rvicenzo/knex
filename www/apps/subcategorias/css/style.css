@@ -1,3 +1,30 @@
+.subCat .progress {
+	border-radius: 100px;
+	background-color: #ffffff;
+	height: 10px;
+	padding: 0;
+	-webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+}
+
+.subCat .progress > div {
+	border-radius:100px;
+	height:10px;
+}
+
+.subCat .progress .verde {
+	background-color: #2ca69a;
+}
+
+.subCat .progress .cinza {
+	background-color: #929292;
+}
+
+.subCat .progress .amarelo {
+	background-color: #f1c40f;
+}
+
 .subCat .header {
 	background-color: #334374;
 	color: #ffffff;

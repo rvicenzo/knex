@@ -7,6 +7,11 @@ angular.module('starter.subcategorias', [])
   $scope.evolution = '91%'; //Expert (nível)
   $scope.abilities = 71; //Habilidades
 
+  $scope.getMarginLeft = function (evolution) {
+    var marginLeft = 100 - parseInt(evolution.replace('%', ''));
+    return marginLeft + '%';
+  }
+
   //Menu dropdow
   //Os dados serão enviados via webservice
   $scope.subcategorias = [
