@@ -13,7 +13,7 @@ function cursoController($scope){
 }
 
 function topoCursoController($scope){
-	$scope.completeCourses = 100;
+	  $scope.completeCourses = 100;
   	$scope.writeAnwser = 25;
   	$scope.activities = 25;
   	$scope.currentCourses = 8;

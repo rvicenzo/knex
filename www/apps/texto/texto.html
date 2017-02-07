@@ -1,0 +1,97 @@
+<ion-view title="Texto" hide-nav-bar="true">
+  <ion-content style="margin-top: -50px;">  
+    <div class="bar bar-header bar-positive;" style="background-color: #2a375d; border: none" ng-controller="topoCursoController">
+      <div class="row">
+            <div class="col col-10">
+              <button menu-toggle="left" id="btnMenu" class="button button-icon icon ion-ios-person-outline"></button>
+            </div>
+            <div class="col col-20">
+              <div class="topoLetter">Vendas</div>
+            </div>
+            <div class="col col-70">
+              <div class="row">
+                <div class="col col-90">
+                  <div class="porcent" style="color: white !important; margin-top: -5px; margin-left: 0px">{{completeCourses}}%</div>
+                  <div class="w3-progress-container w3-round" id="barCourse">
+                <div class="w3-progressbar w3-round" style="width:{{completeCourses}}%; background-color: {{colorCourse}}"></div>
+              </div>
+                </div>
+                <div class="col col-10">
+                  <div menu-close class="icon ion-close-round" id="closeSideMenu" style="margin-top: -5px;"></div>
+                </div>
+            </div>
+          </div>
+    </div>
+    </div>
+    <div ng-controller="TextoCtrl" style="margin-top:50px; padding-top: 40px;">
+      <div class="row" style="background:#444444; height: 50px;">
+        <div class="col" style="text-align:center">
+          <div class="col" style="text-align:center">
+            <a style="color:#ffffff;font-size:25px;" href="#/" class="button button-icon ion-android-checkbox-outline"></a>
+          </div>
+        </div>
+        <div class="col" style="text-align:center;">
+          <div class="padding-vertical">
+            <img src="apps/texto/img/texto-medio.png" style="width: 25px;"/>
+          </div>
+        </div>
+        <div class="col" style="text-align:center">
+          <div class="padding-vertical">
+            <img src="apps/texto/img/vr-medio.png" style="width: 25px;"/>
+          </div>
+        </div>
+        <div class="col" style="text-align:center">
+          <div class="padding-vertical">
+            <img src="apps/texto/img/questionario-medio.png" style="width: 25px;"/>
+          </div>
+        </div>
+      </div>
+      <div class="padding">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis quam sit amet nisi dictum, in iaculis dolor lobortis.
+        Aenean placerat purus non faucibus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis quam sit amet nisi dictum, in iaculis dolor lobortis.
+        Aenean placerat purus non faucibus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis quam sit amet nisi dictum, in iaculis dolor lobortis.
+        Aenean placerat purus non faucibus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis quam sit amet nisi dictum, in iaculis dolor lobortis.
+        Aenean placerat purus non faucibus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin iaculis quam sit amet nisi dictum, in iaculis dolor lobortis.
+        Aenean placerat purus non faucibus.
+      </div>
+      <div class="padding">
+        <button class="button button-block button-dark">
+          Próximo
+        </button>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer>
+    <div class="tabs tabs-icon-top">
+    <a class="tab-item">
+      <i class="icon ion-compass"></i>
+      Explorar
+    </a>
+    <a class="tab-item">
+      <i class="icon ion-ios-chatbubble-outline"></i>
+      Mensagens
+    </a>
+    <a class="tab-item">
+      <i class="icon ion-android-calendar"></i>
+      Calendário
+    </a>
+    <a class="tab-item">
+      <i class="icon ion-pin"></i>
+      Eventos
+    </a>
+    <a class="tab-item">
+      <i class="icon ion-ios-information-outline"></i>
+      Informações
+    </a>
+  </div>
+  </ion-footer>
+</ion-view>
