@@ -1,0 +1,24 @@
+.view-background {
+  background: #334375;
+  /*background: url('../img/foguete.png') left bottom no-repeat #334375;
+  background-size: contain;*/
+}
+
+.col {
+  text-align: center;
+}
+
+h1, h3 {
+  color: #fff;
+}
+
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*.foguete {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}*/
