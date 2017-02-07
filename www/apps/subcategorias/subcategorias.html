@@ -52,8 +52,14 @@
         <ion-item class="item-accordion"
                   ng-repeat="course in subcategoria.courses"
                   ng-show="isGroupShown(subcategoria)">
-          {{course.courseName}}
-          {{course.score}}
+			<div class="row course">
+				<div class="col-67 name">{{course.courseName}}</div>
+				<div class="col-33">
+					<i class="habilidades-color"></i>
+					<strong class="score"><span class="num">{{course.score}}</span> <small> | 100</small></strong>
+					<i class="{{course.status}}"></i>
+				</div>
+			</div>
         </ion-item>
       </div>
     </ion-list>

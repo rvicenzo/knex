@@ -47,19 +47,23 @@ angular.module('starter.subcategorias', [])
           courses: [
             {
               courseName: 'Fechamento',
-              score: 26
+              score: 26,
+              status: 'concluido'
             },
             {
               courseName: 'Entregas',
-              score: 47
+              score: 47,
+              status: 'onde-estou'
             },
             {
               courseName: 'Preparação',
-              score: 0
+              score: 0,
+              status: 'iniciar'
             },
             {
               courseName: 'Contrato',
-              score: 81
+              score: 81,
+              status: 'concluido'
             }
           ]
         },
@@ -70,19 +74,23 @@ angular.module('starter.subcategorias', [])
           courses: [
             {
               courseName: 'Item 01',
-              score: 10
+              score: 10,
+              status: 'concluido'
             },
             {
               courseName: 'Item 02',
-              score: 25
+              score: 25,
+              status: 'onde-estou'
             },
             {
               courseName: 'Item 03',
-              score: 5
+              score: 5,
+              status: 'iniciar'
             },
             {
               courseName: 'Item 04',
-              score: 70
+              score: 70,
+              status: 'concluido'
             }
           ]
         },
@@ -93,19 +101,23 @@ angular.module('starter.subcategorias', [])
           courses: [
             {
               courseName: 'Item 01',
-              score: 5
+              score: 5,
+              status: 'concluido'
             },
             {
               courseName: 'Item 02',
-              score: 15
+              score: 15,
+              status: 'onde-estou'
             },
             {
               courseName: 'Item 03',
-              score: 10
+              score: 10,
+              status: 'iniciar'
             },
             {
               courseName: 'Item 04',
-              score: 90
+              score: 90,
+              status: 'concluido'
             }
           ]
         },
@@ -116,19 +128,23 @@ angular.module('starter.subcategorias', [])
           courses: [
             {
               courseName: 'Item 01',
-              score: 5
+              score: 5,
+              status: 'concluido'
             },
             {
               courseName: 'Item 02',
-              score: 15
+              score: 15,
+              status: 'onde-estou'
             },
             {
               courseName: 'Item 03',
-              score: 10
+              score: 10,
+              status: 'iniciar'
             },
             {
               courseName: 'Item 04',
-              score: 90
+              score: 90,
+              status: 'concluido'
             }
           ]
         }
