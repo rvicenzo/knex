@@ -31,9 +31,35 @@ function menuSliderController($scope){
 
   function getMetrics(){
   	$scope.completeCourses = 75;
+  	$scope.completeCoursesColor = changeColor($scope.completeCourses);
   	$scope.writeAnwser = 25;
-  	$scope.activities = 25;
+  	$scope.writeAnwserColor = changeColor($scope.writeAnwser);
+  	$scope.activities = 50;
+  	$scope.activitiesColor = changeColor($scope.activities);
   	$scope.currentCourses = 8;
   }
+
+  function changeColor(porcentage){
+  		if(porcentage>=0 && porcentage<39){
+  			//cinza
+  			return '#7f7f7f';
+  		}
+  		else if(porcentage>=40 && porcentage<69){
+  			//laranja
+  			return '#fa6600';
+  		}
+  		else if(porcentage>=70 && porcentage<99){
+  			//verde
+  			return '#25a083';
+  		}
+  		else if(porcentage==100){
+  			//azul
+  			return '#0001ff';
+  		}
+  		else{
+  			//amarelo - desafio final
+  			return '#dad805';
+  		}
+  	}
 
 }
