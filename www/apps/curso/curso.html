@@ -1,0 +1,95 @@
+<ion-view style="color: white"  hide-nav-bar="true">
+	<ion-content style="margin-top: -50px;">  
+		<div class="bar bar-header bar-positive;" style="background-color: #2a375d; border: none" ng-controller="topoCursoController">
+			<div class="row">
+	  	  		<div class="col col-10">
+	  	  			<button menu-toggle="left" id="btnMenu" class="button button-icon icon ion-ios-person-outline"></button>
+	  	  		</div>
+	  	  		<div class="col col-20">
+	  	  			<div class="topoLetter">Vendas</div>
+	  	  		</div>
+	  	  		<div class="col col-70">
+	  	  			<div class="row">
+	  	  				<div class="col col-90" style="margin-top: -10px">
+	  	  					<div class="porcent" style="color: white !important; margin-top: -5px; margin-left: 0px">{{completeCourses}}%</div>
+	  	  					<div class="w3-progress-container w3-round" id="barCourse">
+								<div class="w3-progressbar w3-round" style="width:{{completeCourses}}%; background-color: {{colorCourse}}"></div>
+							</div>
+	  	  				</div>
+	  	  				<div class="col col-10">
+	  	  					<div menu-close class="icon ion-close-round" id="closeSideMenu" style="margin-top: -15px"></div>
+	  	  				</div>
+	  	  		</div>
+	        </div>
+		</div>
+		</div>
+		<div ng-controller="cursoController">
+			<div class="subMenu">
+				<div class="row">
+					<div class="col col-50">
+						<div class="topoLetter" style="margin-top: 40px;">Fechamento</div>
+					</div>
+					<div class="col col-50">
+						<div class="row">
+							<div class="col col-100">
+								<div class="letterCoursePorcentage">50 | 100</div>
+								<img src="img/skills_white.png" style="height: 30px; color: white; margin-top: 26px; float: right; margin-left: 10px">
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<!-- ********************************LIST************************************-->
+
+			<ion-list>
+			  <ion-item ng-repeat="top in topicos" style="cursor: pointer">
+			    <div class="row">
+			    	<div class="col col-100">
+			    		<!--
+						top.done==false eh uma atividade incompleta
+						top.done==true eh uma atividade completa
+						quando a atividade eh completa tem que muda a cor do icone e do detalhe
+			    		-->
+			    		<div ng-if="top.done==true && $index!=0" class="detailTopCourseComplete"></div>
+			    		<div ng-if="top.done==false && $index!=0" class="detailTopCourseIncomplete"></div>
+			    		<img ng-if="top.done==false" src="img/iniciar.png" style="height: 25px;">
+			    		<img ng-if="top.done==true" src="img/concluido.png" style="height: 25px;">
+			    		<div style="margin-left: 50px; margin-top: -20px">{{top.text}}</div>
+			    		<div ng-if="top.done==true && $last==false" class="detailCourseComplete"></div>
+			    		<div ng-if="top.done==false && $last==false" class="detailCourseIncomplete"></div>
+			    	</div>
+			    </div>
+			  </ion-item>
+			</ion-list>
+
+			<!-- ********************************./LIST************************************-->
+	  	</div>
+	</ion-content>
+	<ion-footer>
+	  	<div class="tabs tabs-icon-top">
+		  <a class="tab-item">
+		    <i class="icon ion-compass"></i>
+		    Explorar
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-ios-chatbubble-outline"></i>
+		    Mensagens
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-android-calendar"></i>
+		    Calendário
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-pin"></i>
+		    Eventos
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-ios-information-outline"></i>
+		    Informações
+		  </a>
+		</div>
+	</ion-footer>
+</ion-view>
