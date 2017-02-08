@@ -1,10 +1,10 @@
 .imgProfileContato{
-	width: 120px;
-	height: 120px;
+	width: 105px;
+	height: 105px;
     border-radius: 50%;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
     left: 10%;
-    margin-top: 30px;
+    margin-top: -40px;
 }
 
 .nameContato{
@@ -24,4 +24,19 @@
 
 .minletterContact{
 	float: right; margin-top: -20px; color: #2a375d;
+}
+
+.circlePosition{
+	width: 40px;
+	height: 40px;
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    background-color: #2a375d;
+    margin-left: 128px;
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 22px;
+    font-family: cursive;
+    font-weight: 800;
 }

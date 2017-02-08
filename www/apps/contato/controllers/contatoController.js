@@ -11,6 +11,7 @@ function contatoController($scope){
   function getInfo(){
     $scope.nameContact = "Jon Snow";
     $scope.descContact = "Agência 88";
+    $scope.positionContact = "16";
   }
 
   function getMedals(){
