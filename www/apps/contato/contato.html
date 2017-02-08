@@ -1,0 +1,210 @@
+<ion-view view-title="Contato" style="color: white">
+	<ion-nav-bar class="header-bar" style="background-color: #2a375d">
+      <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-ios-person-outline" style="width: 90px !important; color: white"></button>
+        <div style="width: 100%; text-align: center;">
+        </div>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+      	<div menu-close class="icon ion-close-round" id="closeSideMenu" style="margin-top: 6px; padding-right: 5px;"></div>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+  <ion-content style="background-color: #f4f4f5">
+
+  <div ng-controller="contatoController">
+  	<center>
+  		<div ng-style="imgProfile" class="imgProfileContato">
+    	</div>
+
+    	<div class="nameContato">
+    		{{nameContact}}
+    	</div>
+
+    	<div class="descContato">
+    		{{descContact}}
+    	</div>
+
+        <div class="medalsLetter">Minhas Conquistas</div>
+        <ion-slide-box>
+          <ion-slide ng-repeat="medal in medals">
+            <div class="row" style="margin-top: 20px">
+              <div class="col col-33.3333" ng-repeat="itemMedal in medal">
+                <center>
+                  <img ng-src="{{itemMedal.img}}" style="width: 65%; max-width: 100px;">
+                  <div class="minLetterMedal">{{itemMedal.text}}</div>
+                </center>
+              </div>
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+
+	      <div class="medalsLetter">Minhas Métricas</div>
+	      <div class="faixa">
+	        <div class="metricsLetterTopo">Média de conquistas</div>
+	      </div>
+
+	      <!-- ****************************my metrics************************************* -->
+	      <div class="row">
+	        <div class="col col-25">
+	          <!--stars-->
+	          <center>
+	            <img src="img/star2.png" class="star1">
+	            <img src="img/star2.png" class="star1">
+	            <img src="img/star2.png" class="star1">
+	          </center>
+	          <!---./stars-->
+
+	        </div>
+
+	        
+	        <div class="col col-75">
+	           <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 60%; float: left">
+	              <div class="w3-progressbar w3-round-xlarge" style="width:{{porcentage1Contact}}%; background-color: {{color1Contact}} !important"></div>
+	            </div>
+	            <div style="width: 20%; color: {{color1Contact}}; margin-left: 75px;">
+	              {{porcentage1Contact}}%
+	            </div>
+	            <div class="minletterContact">{{score1Contact}}/{{total1Contact}}</div>
+	        </div>
+	      </div>
+	      <!-- ****************************./my metrics************************************* -->
+	      <!-- ****************************my metrics************************************* -->
+	      <div class="row">
+	        <div class="col col-25">
+	          <!--stars-->
+	          <center>
+	            <img src="img/star1.png" class="star1">
+	            <img src="img/star2.png" class="star1">
+	            <img src="img/star2.png" class="star1">
+	          </center>
+	          <!---./stars-->
+
+	        </div>
+
+	        
+	        <div class="col col-75">
+	           <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 60%; float: left">
+	              <div class="w3-progressbar w3-round-xlarge" style="width:{{porcentage2Contact}}%; background-color: {{color2Contact}} !important"></div>
+	            </div>
+	            <div style="width: 20%; color: {{color2Contact}}; margin-left: 75px;">
+	              {{porcentage2Contact}}%
+	            </div>
+	            <div class="minletterContact">{{score2Contact}}/{{total2Contact}}</div>
+	        </div>
+	      </div>
+	      <!-- ****************************./my metrics************************************* -->
+	      <!-- ****************************my metrics************************************* -->
+	      <div class="row">
+	        <div class="col col-25">
+	          <!--stars-->
+	          <center>
+	            <img src="img/star1.png" class="star1">
+	            <img src="img/star1.png" class="star1">
+	            <img src="img/star2.png" class="star1">
+	          </center>
+	          <!---./stars-->
+
+	        </div>
+
+	        
+	        <div class="col col-75">
+	           <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 60%; float: left">
+	              <div class="w3-progressbar w3-round-xlarge" style="width:{{porcentage3Contact}}%; background-color: {{color3Contact}} !important"></div>
+	            </div>
+	            <div style="width: 20%; color: {{color3Contact}}; margin-left: 75px;">
+	              {{porcentage3Contact}}%
+	            </div>
+	            <div class="minletterContact">{{score3Contact}}/{{score3Contact}}</div>
+	        </div>
+	      </div>
+	      <!-- ****************************./my metrics************************************* -->
+	      <!-- ****************************my metrics************************************* -->
+	      <div class="row">
+	        <div class="col col-25">
+	          <!--stars-->
+	          <center>
+	            <img src="img/star1.png" class="star1">
+	            <img src="img/star1.png" class="star1">
+	            <img src="img/star1.png" class="star1">
+	          </center>
+	          <!---./stars-->
+
+	        </div>
+
+	        
+	        <div class="col col-75">
+	           <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 60%; float: left">
+	              <div class="w3-progressbar w3-round-xlarge" style="width:{{porcentage4Contact}}%; background-color: {{color4Contact}} !important"></div>
+	            </div>
+	            <div style="width: 20%; color: {{color4Contact}}; margin-left: 75px;">
+	              {{porcentage4Contact}}%
+	            </div>
+	            <div class="minletterContact">{{score4Contact}}/{{score4Contact}}</div>
+	        </div>
+	      </div>
+	      <!-- ****************************./my metrics************************************* -->
+
+	      <div class="faixa">
+	        <div class="metricsLetterTopo">Aproveitamento</div>
+	      </div>
+
+	      <!-- _____________________________aproveitamento*_______________________________ -->
+	      <ion-list>
+	        <ion-item ng-repeat="item in aproveitamentoContact" style="height: 60px;">
+	            <div class="row">
+	              <div class="col col-20">
+	                <!--stars-->
+	                <center>
+	                  <div class="baseImg">
+
+	                  </div>
+	                </center>
+	                <!---./stars-->
+	              </div>
+	              
+	              <div class="col col-80">
+	                 <div class="nameAproveitamento">
+	                    {{item.name}}
+	                 </div>
+	                 <div class="w3-progress-container w3-round-small" style="height: 15px; margin-top: 5px; width: 55%; float: left; height: 8px;">
+	                    <div class="w3-progressbar w3-round-xlarge" style="width:{{item.porcentage}}%; background-color: #3098db !important"></div>
+	                  </div>
+	                  <div style="width: 20%; color: #3098db; margin-left: 70px;">
+	                    {{item.porcentage}}%
+	                  </div>
+	                  <div class="minletterContact">51/66</div>
+	              </div>
+	            </div>
+	        </ion-item>
+	      </ion-list>
+	      <!-- _____________________________./aproveitamento*_______________________________ -->
+
+	</center>
+  </div>
+  <br/>
+  </ion-content>
+  <ion-footer>
+  	<div class="tabs tabs-icon-top">
+	  <a class="tab-item">
+	    <i class="icon ion-compass"></i>
+	    Explorar
+	  </a>
+	  <a class="tab-item">
+	    <i class="icon ion-ios-chatbubble-outline"></i>
+	    Mensagens
+	  </a>
+	  <a class="tab-item">
+	    <i class="icon ion-android-calendar"></i>
+	    Calendário
+	  </a>
+	  <a class="tab-item">
+	    <i class="icon ion-pin"></i>
+	    Eventos
+	  </a>
+	  <a class="tab-item">
+	    <i class="icon ion-ios-information-outline"></i>
+	    Informações
+	  </a>
+	</div>
+  </ion-footer>
+</ion-view>

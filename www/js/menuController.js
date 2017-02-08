@@ -59,13 +59,29 @@ function menuSliderController($scope){
   }
 
   function getMetrics(){
-  	$scope.completeCourses = 75;
-  	$scope.completeCoursesColor = changeColor($scope.completeCourses);
-  	$scope.writeAnwser = 25;
-  	$scope.writeAnwserColor = changeColor($scope.writeAnwser);
-  	$scope.activities = 50;
-  	$scope.activitiesColor = changeColor($scope.activities);
-  	$scope.currentCourses = 8;
+    //total
+    $scope.total1 = 66;
+    $scope.total2 = 55;
+    $scope.total3 = 55;
+    $scope.total4 = 32;
+
+    //score
+    $scope.score1 = 33;
+    $scope.score2 = 44;
+    $scope.score3 = 12;
+    $scope.score4 = 32;
+
+    //porcentage
+    $scope.porcentage1 = parseInt($scope.score1*100/$scope.total1);
+    $scope.porcentage2 = parseInt($scope.score2*100/$scope.total2);
+    $scope.porcentage3 = parseInt($scope.score3*100/$scope.total3);
+    $scope.porcentage4 = parseInt($scope.score4*100/$scope.total4);
+
+    //colors
+    $scope.color1 = changeColor($scope.porcentage1);
+    $scope.color2 = changeColor($scope.porcentage2);
+    $scope.color3 = changeColor($scope.porcentage3);
+    $scope.color4 = changeColor($scope.porcentage4);
   }
 
   function changeColor(porcentage){

@@ -1,0 +1,27 @@
+.imgProfileContato{
+	width: 120px;
+	height: 120px;
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    left: 10%;
+    margin-top: 30px;
+}
+
+.nameContato{
+	color: #2a375d;
+	font-weight: 800;
+	font-size: 22px;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+.descContato{
+	color: #2a375d;
+	font-weight: 400;
+	font-size: 20px;
+	padding-top: 25px;
+}
+
+.minletterContact{
+	float: right; margin-top: -20px; color: #2a375d;
+}
