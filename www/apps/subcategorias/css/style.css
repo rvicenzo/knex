@@ -1,11 +1,26 @@
+.subCat .item-stable,
+.subCat .item.active.item-stable {
+	background-color: #f5f5f5;
+	border-color: rgba(178, 178, 178, 0.31);
+}
+
 .subCat .item {
 	padding: 16px 0px 10px;
 }
 
-.subCat .name {
+.subCat .item-stable .name {
 	color: #334374;
+	font-size: 18px;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+
+.subCat .level > span {
+	display: inline-block;
+	float: left;
+	height: 18px;
+	margin: -3px 2px 0 5px;
+	width: 18px;
 }
 
 .subCat .evo {
@@ -14,30 +29,106 @@
 	padding: 0;
 }
 
-.subCat .letra {
+.subCat .level {
 	padding: 0;
 }
 
-.subCat .letra span {
-	float: left;
-	margin-left: 5px;
+.subCat .level .a {
+	background-image: url('../img/i-avancado.png');
+	background-repeat: no-repeat;
 }
 
-.subCat .letra i {
-    margin: -2px 0 0 6px;
+.subCat .level .e {
+	background-image: url('../img/i-expert.png');
+	background-repeat: no-repeat;
+}
+
+.subCat .level .i {
+	background-image: url('../img/i-intermediario.png');
+	background-repeat: no-repeat;
+}
+
+.subCat .level .p {
+	background-image: url('../img/i-principiante.png');
+	background-repeat: no-repeat;
+}
+
+.subCat .header .light i {
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	height: 11px;
+	width: 11px;
+}
+
+.subCat .ranking-pb {
+	background-image: url('../img/ranking-pb.png');
+}
+
+.subCat .habilidades-pb {
+	background-image: url('../img/habilidades-pb.png');
+}
+
+.subCat .course {
+	padding: 15px 5px;
+}
+
+.subCat .course .name {
+	color: #525252;
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.subCat .course i {
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	height: 30px;
+	margin-top: 5px;
+	position: absolute;
+	right: 10px;
+	width: 30px;
+}
+
+.subCat .course .habilidades-color {
+	background-image: url('../img/habilidades-color.png');
+	height: 15px;
+	position: relative;
+	width: 15px;
+}
+
+.subCat .course .concluido {
+	background-image: url('../img/concluido.png');
+}
+
+.subCat .course .iniciar {
+	background-image: url('../img/iniciar.png');
+}
+
+.subCat .course .onde-estou {
+	background-image: url('../img/onde-estou.png');
+}
+
+.subCat .score {
+	display: inline-block;
+	margin-left: -5px;
+}
+
+.subCat .score .num {
+	display: inline-block;
+	text-align: center;
+	width: 20px;
+}
+
+.subCat .score small {
+	font-size: 70%;
+	font-weight: lighter;
+}
+
+.subCat .level i {
+    margin: -4px 0 0 6px;
     position: absolute;
-}
-
-.subCat .letra > span {
-    display: inline-block;
-    border: 1px solid #565559;
-    border-radius: 100%;
-    font-size: 10px;
-    font-weight: bold;
-    height: 15px;
-    line-height: 12px;
-    text-align: center;
-    width: 15px;
 }
 
 .subCat .progress {
@@ -53,18 +144,6 @@
 .subCat .progress > div {
 	border-radius:100px;
 	height:10px;
-}
-
-.subCat .progress .verde {
-	background-color: #2ca69a;
-}
-
-.subCat .progress .cinza {
-	background-color: #929292;
-}
-
-.subCat .progress .amarelo {
-	background-color: #f1c40f;
 }
 
 .subCat .header {
@@ -92,11 +171,12 @@
 
 .subCat .header .light {
 	font-weight: lighter;
+	font-size: 16px;
 }
 
 .subCat .header .padding {
 	padding-top: 20px;
-	padding-bottom: 0;
+	padding-bottom: 10px;
 }
 
 .subCat .header .c100 {
@@ -114,6 +194,7 @@
 }
 
 .subCat .header .percent .text-center {
+	font-size: 16px;
 	margin: -10px auto 0;
 }
 

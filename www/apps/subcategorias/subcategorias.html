@@ -12,7 +12,7 @@
 	      <div class="col padding">
 	      	<strong>{{partialRanking}}</strong>
 	      	<div class="light">
-	      		<i class="icon ion-trophy"></i>&nbsp;Parcial
+	      		<i class="ranking-pb"></i>&nbsp;Parcial
 	      	</div>
 	      </div>
 	      <div class="col percent">
@@ -30,13 +30,13 @@
 	      <div class="col padding">
 	      	<strong>{{abilities}}<small> | 100</small></strong>
 	      	<div class="light">
-	      		<i class="icon ion-ribbon-b"></i>&nbsp;Habilidades
+	      		<i class="habilidades-pb"></i>&nbsp;Habilidades
 	      	</div>
 	       </div>
 	    </div>
   	</div>
     <ion-list>
-      <div ng-repeat="(idx, subcategoria) in subcategorias">
+      <div ng-repeat="subcategoria in subcategorias">
         <ion-item class="item-stable"
                   ng-click="toggleGroup(subcategoria)"
                   ng-class="{active: isGroupShown(subcategoria)}">
@@ -46,11 +46,12 @@
                       <div class="row">
                       	<div class="col evo">{{subcategoria.evolution}}</div>
                         <div class="col col-50 progress">
-							<div class="loader" ng-class="{'verde': idx === 0, 'cinza': idx === 1, 'amarelo': idx === 2}"
-							style="width: {{subcategoria.evolution}}"></div>
-						</div>
-                        <div class="col letra">
-                        	<span class="letra">A</span>
+							                   <!--div class="loader" ng-class="{'verde': idx === 0, 'cinza': idx === 1, 'amarelo': idx === 2}"
+							style="width: {{subcategoria.evolution}}"></div-->
+							           <div class="loader" ng-style="{{getStyle(subcategoria.evolution)}}"></div>
+						            </div>
+                        <div class="col level">
+                        	<span class="{{subcategoria.level}}"></span>
 							<i class="icon" ng-class="isGroupShown(subcategoria) ? 'ion-chevron-down' : 'ion-chevron-right'"></i>
                         </div>
                       </div>
@@ -60,8 +61,14 @@
         <ion-item class="item-accordion"
                   ng-repeat="course in subcategoria.courses"
                   ng-show="isGroupShown(subcategoria)">
-          {{course.courseName}}
-          {{course.score}}
+			<div class="row course">
+				<div class="col-67 name">{{course.courseName}}</div>
+				<div class="col-33">
+					<i class="habilidades-color"></i>
+					<strong class="score"><span class="num">{{course.score}}</span> <small> | 100</small></strong>
+					<i class="{{course.status}}"></i>
+				</div>
+			</div>
         </ion-item>
       </div>
     </ion-list>
