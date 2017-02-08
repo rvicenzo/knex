@@ -1,5 +1,20 @@
-<ion-view>
-  <ion-content ng-controller="CategoriasCtrl">
-    <h1>PINGOLA<h1>
-  <ion-content>
+<ion-view view-title="Categorias">
+	<ion-content ng-controller="CategoriasCtrl" class="categorias">
+		<div class="row busca">
+			<div class="col">
+				<label class="item item-input">
+					<input type="text" placeholder="Buscar curso">
+					<i class="icon ion-search placeholder-icon"></i>
+				</label>
+			</div>
+		</div>
+		<div class="main">
+			<div class="bg">
+				<p class="row">Olá, escolha a trilha que gostaria de seguir:</p>
+				<div ng-repeat="trilha in trilhas" class="trilhas text-center">
+					<h1>{{trilha.nome}}</h1>
+				</div>
+			</div>
+		</div>
+	</ion-content>
 </ion-view>
