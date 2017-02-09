@@ -8,11 +8,24 @@
 				</label>
 			</div>
 		</div>
-		<div class="main">
-			<div class="bg">
-				<p class="row">Olá, escolha a trilha que gostaria de seguir:</p>
-				<div ng-repeat="trilha in trilhas" class="trilhas text-center">
-					<h1>{{trilha.nome}}</h1>
+		<div class="bg">
+			<h6 class="row">Olá, escolha a trilha que gostaria de seguir:</h6>
+			<div ng-repeat="trilha in trilhas" class="trilhas text-center">
+				<div class="col percent">
+					<div class="level">{{trilha.level}}</div>
+					<div class="c100 small p{{trilha.percent}}">
+						<span><i class="{{trilha.icone}}"></i></span>
+						<div class="slice">
+							<div class="percentBar" ng-style="{'border-color': changeColor(trilha.percent)}"></div>
+							<div class="fill" ng-style="{'border-color': changeColor(trilha.percent)}"></div>
+						</div>
+					</div>
+					<div class="row">
+						<strong class="text-center lighten">{{trilha.nome}}</strong>
+					</div>
+					<div class="row">
+						<small class="text-center">{{trilha.cursos}} cursos</small>
+					</div>
 				</div>
 			</div>
 		</div>
