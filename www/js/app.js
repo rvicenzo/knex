@@ -67,6 +67,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'PlaylistCtrl'
       }
     }
+  })
+
+  .state('app.vr', {
+    url: '/vr',
+    views: {
+      'menuContent': {
+        templateUrl: 'apps/vr/vr.html'
+      }
+    }
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/playlists');
