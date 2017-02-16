@@ -1,0 +1,73 @@
+<ion-view view-title="Chat" style="color: white" hide-nav-bar="true">
+  <ion-content style="background-color: #eeeeee">
+  	<div ng-controller="chatController">
+		<div class="bar bar-header bar-positive;" style="background-color: #2a375d; border: none">
+			<div class="row">
+	  	  		<div class="col col-10">
+	  	  			<button menu-toggle="left" id="btnMenu" class="button button-icon icon ion-ios-person-outline"></button>
+	  	  		</div>
+	  	  		<div class="col col-80">
+	  	  			<center>
+	  	  				<div class="imgChat" ng-style="imgProfileChat">
+	  	  				</div>
+	  	  				<div class="nameUserChat">
+	  	  					{{nameUser}}
+	  	  				</div>
+	  	  			</center>
+	  	  		</div>
+	  	  		<div class="col col-10">
+	  	  			<div menu-close class="icon ion-close-round" id="closeSideMenuChat" style="margin-top: -5px;"></div>
+	  	  		</div>
+	        </div>
+		</div>
+		<div style="padding-top: 45px;">
+			<ion-list class="item" id="chatBox"> 
+	          <!--item esquerda-->
+	          <ion-item>
+	          	  <div class="talk-bubble-Blue tri-right left-top">
+	                <div class="talktext">
+	                  <div>teste</div>
+	                </div>
+	              </div>
+	      	  </ion-item>
+	      	  <!--item-->
+
+	      	  <!--item direita-->
+	          <ion-item>
+	          	  <div class="talk-bubble tri-right right-top" style="float: right">
+	                <div class="talktext">
+	                  <div>teste</div>
+	                </div>
+	              </div>
+	      	  </ion-item>
+	      	  <!--item-->
+
+	        </ion-list>
+    	</div>
+  	</div>
+  </ion-content>
+  <ion-footer>
+  	<div class="tabs tabs-icon-top">
+	  <a class="tab-item">
+	    <i class="icon ion-compass"></i>
+	    Explorar
+	  </a>
+	  <a class="tab-item">
+	    <i class="icon ion-ios-chatbubble-outline"></i>
+	    Mensagens
+	  </a>
+	  <a class="tab-item">
+	    <i class="icon ion-android-calendar"></i>
+	    Calendário
+	  </a>
+	  <a class="tab-item">
+	    <i class="icon ion-pin"></i>
+	    Eventos
+	  </a>
+	  <a class="tab-item">
+	    <i class="icon ion-ios-information-outline"></i>
+	    Informações
+	  </a>
+	</div>
+  </ion-footer>
+</ion-view>
