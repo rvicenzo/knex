@@ -1,0 +1,52 @@
+<ion-view view-title="Eventos" class="eventos" ng-controller="EventosCtrl">
+	<ion-header-bar align-title="left" class="bar-light bar-subheader">
+		<div class="tabs tabs-icon-left">
+			<a class="tab-item">
+				<i class="marker-galeria"></i>
+				<span>Galeria</span>
+			</a>
+			<a class="tab-item">
+				<i class="em-alta"></i>
+				<span>Em Alta</span>
+			</a>
+			<a class="tab-item" ng-click="exibirFiltros()">
+				<i class="filtro"></i>
+				<span>Filtros</span>
+			</a>
+		</div>
+		<div class="row busca" ng-class="{hide: !showFiltros}">
+			<div class="col-50">
+				<label class="item item-input">
+					<input type="text" placeholder="Nome do vídeo">
+				</label>
+			</div>
+			<div class="col-50">
+				<label class="item item-input">
+					<input type="date" placeholder="Data">
+					<i class="icon ion-search placeholder-icon"></i>
+				</label>
+			</div>
+		</div> 	
+	</ion-header-bar>
+	<ion-content>
+		<div class="content">
+			<div class="destaque">
+				<div class="cover" style="background-image: url({{destaque.url}});">
+					<i class="play"></i>
+					<i class="vr-grande"></i>
+				</div>
+				<strong class="row">{{destaque.nome}}</strong>
+				<p class="row">{{destaque.descricao}}</p>
+			</div>
+			<div class="videos row" ng-repeat="video in videos">
+				<div class="cover" style="background-image: url({{video.url}});">
+					<i class="play"></i>
+				</div>
+				<div class="col texto">
+					<strong>{{video.nome}}</strong><br/>
+					<p>{{video.descricao}}</p>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
