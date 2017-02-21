@@ -1,23 +1,24 @@
 <ion-view view-title="Calendário" class="calendario" ng-controller="CalendarioCtrl">
 	<ion-content>
 		<div class="content">
-			<div class="row text-center">
-				<div class="col-33">
+			<div class="row">
+				<div class="col-33 text-left">
 					<span ng-click="changeDate(-1)">
 						<i class="ion-chevron-left"></i> Anterior
 					</span>
 				</div>
-				<div class="col-33">
+				<div class="col-33 text-center">
 					<strong>{{viewTitle}}</strong>
 				</div>
-				<div class="col-33">
+				<div class="col-33 text-right">
 					<span ng-click="changeDate(1)">
 						<i class="ion-chevron-right"></i> Seguinte
 					</span>
 				</div>
 			</div>
 			<calendar ng-model="calendar.currentDate" calendar-mode="month" format-month-title="MMMM" 
-			title-changed="onViewTitleChanged(title)" event-source="eventos"></calendar>
+			title-changed="onViewTitleChanged(title)" format-day="d" event-source="eventos"
+			auto-select="false"></calendar>
 		</div>
 	</ion-content>
 </ion-view>
