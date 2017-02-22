@@ -1,0 +1,14 @@
+<div ng-show="selectedDate.events.length" class="detalhes">
+    <ul>
+        <li ng-repeat="event in selectedDate.events" ng-click="eventSelected({event:event})" class="row">
+            <!-- <div ng-if="!event.allDay && event.startTime && event.endTime" class="monthview-eventdetail-timecolumn">
+                {{::event.startTime|date: 'HH:mm'}} - {{::event.endTime|date: 'HH:mm'}}
+            </div> -->
+            <div ng-if="!event.allDay && event.startTime && event.endTime" class="monthview-eventdetail-timecolumn">
+                {{::event.startTime|date: 'HH:mm'}}
+            </div>
+            <div ng-if="event.allDay" class="monthview-eventdetail-timecolumn">Dia todo</div>
+            <div class="event-detail"> | {{::event.title}}</div>
+        </li>
+    </ul>
+</div>

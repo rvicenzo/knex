@@ -1,0 +1,138 @@
+.eventos {
+	color: #2a375d;
+	font-size: 12px;
+}
+
+.eventos .content {
+	padding-bottom: 50px;
+}
+
+.eventos .bar-subheader {
+    height: 34px;
+    top: 42px;
+}
+
+.eventos p {
+	line-height: 16px;
+}
+
+.eventos .tabs-icon-left {
+	background-color: #f3f3f3;
+	height: 34px;
+	margin-left: -5px;
+	line-height: 44px;
+}
+
+.eventos .has-subheader {
+	top: 76px;
+}
+
+.eventos .busca {
+	margin-top: 30px;
+	padding: 0;
+	z-index: 9999;
+}
+
+.eventos .busca > div:first-child {
+	padding-right: 5px;
+}
+
+.eventos .busca input {
+	height: 24px;
+}
+
+.eventos .busca i {
+	margin-right: 10px;
+}
+
+.eventos .tabs-icon-left span {
+	font-weight: lighter;
+	position: relative;
+	top: -7px;
+}
+
+.eventos .tabs-icon-left i {
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 22px;
+	width: 22px;
+}
+
+.eventos .cover i {
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+}
+
+.eventos .cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.eventos .destaque .cover {
+    height: 180px;
+    width: 100%;
+}
+
+.eventos .videos {
+	margin-bottom: 15px;
+}
+
+.eventos .videos:last-child {
+	margin-bottom: 0;
+}
+
+.eventos .videos .cover {
+    height: 65px;
+    width: 40%;
+}
+
+.eventos .videos .texto {
+	padding-top: 0;
+	margin-top: -5px;
+}
+
+.eventos .cover i {
+	position: absolute;
+}
+
+.eventos .destaque .cover i:active {
+	opacity: 1;
+}
+
+.eventos .cover .play {
+	background-image: url('../img/play.png');
+	height: 40px;
+	left: 50%;
+	margin: -20px 0 0 -20px;
+	opacity: 0.5;
+	top: 50%;
+	width: 40px;
+}
+
+.eventos .destaque .vr-grande {
+	height: 25px;
+	background-image: url('../img/vr-grande.png');
+	opacity: 0.8;
+	right: 10px;
+	bottom: 10px;
+	width: 25px;
+}
+
+.eventos .tabs-icon-left .em-alta {
+	background-image: url('../img/em-alta.png');
+}
+
+.eventos .tabs-icon-left .filtro {
+	background-image: url('../img/filtro.png');
+}
+
+.eventos .tabs-icon-left .marker-galeria {
+	background-image: url('../img/marker-galeria.png');
+}
+
+.eventos .tabs-icon-left .grafico {
+	background-image: url('../img/grafico.png');
+}
