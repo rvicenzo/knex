@@ -16,7 +16,7 @@
 					</span>
 				</div>
 			</div>
-			<calendar calendar-mode="month" format-month-title="MMMM" title-changed="onViewTitleChanged(title)" format-day="d" event-source="eventos" ng-model="selectedDate" monthview-event-detail-template-url="detailTemplate"></calendar>
+			<calendar calendar-mode="month" format-month-title="MMMM" title-changed="onViewTitleChanged(title)" format-day="d" event-source="eventos" ng-model="selectedDate" monthview-event-detail-template-url="detailTemplate" event-selected="onEventSelected(event)"></calendar>
 		</div>
 	</ion-content>
 	<div class="addEvento">

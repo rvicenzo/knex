@@ -44,6 +44,12 @@ function CalendarioCtrl($scope) {
 		$scope.viewTitle = title;
 	};
 
+	$scope.onEventSelected = function (event) {
+		console.log(event.title);
+		console.log(event.startTime);
+		console.log(event.endTime);
+	};
+
 	$scope.detailTemplate = 'templates/eventDetail.html';
 	$scope.selectedDate = new Date(2017, 1, 28);
 }
