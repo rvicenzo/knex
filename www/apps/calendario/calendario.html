@@ -1,7 +1,7 @@
 <ion-view view-title="Calendário" class="calendario" ng-controller="CalendarioCtrl">
 	<ion-content>
 		<div class="content">
-			<div class="row">
+			<div class="row title">
 				<div class="col-33 text-left">
 					<span ng-click="changeDate(-1)">
 						<i class="ion-chevron-left"></i> Anterior
@@ -12,13 +12,15 @@
 				</div>
 				<div class="col-33 text-right">
 					<span ng-click="changeDate(1)">
-						<i class="ion-chevron-right"></i> Seguinte
+						Seguinte <i class="ion-chevron-right"></i>
 					</span>
 				</div>
 			</div>
-			<calendar ng-model="calendar.currentDate" calendar-mode="month" format-month-title="MMMM" 
-			title-changed="onViewTitleChanged(title)" format-day="d" event-source="eventos"
-			auto-select="false"></calendar>
+			<calendar calendar-mode="month" format-month-title="MMMM" title-changed="onViewTitleChanged(title)" format-day="d" event-source="eventos" ng-model="selectedDate" monthview-event-detail-template-url="detailTemplate"></calendar>
 		</div>
 	</ion-content>
+	<div class="addEvento">
+		<i class="ion-ios-plus-outline"></i>
+		<span>Adicionar evento</span>
+	</div>
 </ion-view>
