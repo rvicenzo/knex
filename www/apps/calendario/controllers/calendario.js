@@ -45,6 +45,7 @@ function CalendarioCtrl($scope) {
 	};
 
 	$scope.onEventSelected = function (event) {
+		alert(event.title);
 		console.log(event.title);
 		console.log(event.startTime);
 		console.log(event.endTime);
