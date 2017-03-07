@@ -37,16 +37,16 @@
 }
 
 .categorias .trilhas {
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 .categorias .trilhas i {
 	background-repeat: no-repeat;
 	background-size: contain;
 	display: inline-block;
-	height: 40px;
-	margin-top: 15px;
-	width: 40px;
+	height: 60px;
+	margin-top: 20px;
+	width: 60px;
 }
 
 .categorias .trilhas .agencia {
@@ -59,6 +59,7 @@
 
 .categorias .trilhas .comercial {
 	background-image: url('../img/comercial.png');
+	margin-left: -8px;
 }
 
 .categorias .trilhas .grafico {
@@ -68,16 +69,16 @@
 .categorias .trilhas .level {
 	background-color: #fff;
 	border-radius: 100%;
-	font-size: 11px;
+	font-size: 13px;
 	font-weight: 800;
-	height: 16px;
+	height: 20px;
 	left: 50%;
-	line-height: 16px;
-	margin-left: -8px;
-	margin-top: -6px;
+	line-height: 20px;
+	margin-left: -10px;
+	margin-top: -8px;
 	position: absolute;
 	text-transform: uppercase;
-	width: 16px;
+	width: 20px;
 	z-index: 99999;
 }
 
@@ -93,7 +94,7 @@
 
 .categorias .c100 {
 	left: 50%;
-	margin-left: -42px;
+	margin-left: -60px;
 }
 
 .categorias .c100,
@@ -102,22 +103,22 @@
 }
 
 .categorias .c100.small {
-	font-size: 85px;
+	font-size: 120px;
 }
 
 .categorias .c100.small span {
 	border: 5px solid #e6e7e8;
 	border-radius: 100%;
-	height: 72px;
+	height: 107px;
 	margin-top: 1px;
-	width: 74px;
+	width: 109px;
 	z-index: 0;
 }
 
 .categorias .fill,
 .categorias .percentBar {
-	height: 72px !important;
-	width: 72px !important;
+	height: 107px !important;
+	width: 107px !important;
 }
 
 .categorias .percentBar {
